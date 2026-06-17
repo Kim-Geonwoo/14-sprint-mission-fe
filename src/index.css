@@ -1,7 +1,22 @@
 @import "tailwindcss";
 
+/* 폰트 추가 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "ROKAF_Sans";
+  src: url("/fonts/ROKAF_Sans_Bold.otf") format("otf");
+}
+
 /* 판다마켓 프로젝트용 사용자 지정 색상테마 */
 @theme {
+  --font-sans: "Pretendard", sans-serif;
+  --font-rokaf: "ROKAF_Sans", sans-serif;
+
   --color-primary-100: #3692FF;
   --color-primary-200: #1967D6;
   --color-primary-300: #1251AA;
