@@ -1,12 +1,15 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-// import './App.css'
+
+// 컴포넌트들
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
+      <Header />
       <section class="mt-8 flex flex-col items-center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
