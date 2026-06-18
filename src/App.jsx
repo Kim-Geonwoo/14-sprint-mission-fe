@@ -2,6 +2,7 @@
 import Header from './components/Header'
 import ProductBest from './components/ProductBest';
 import ProductList from './components/ProductList';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           <ProductBest />
           <ProductList />
       </section>
+      <Footer />
     </>
   )
 }
