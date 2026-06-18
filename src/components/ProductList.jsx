@@ -18,13 +18,20 @@ const ProductList = () => {
   }
 
   return (
-    <div className="w-full px-4 md:px-6 lg:px-90 flex flex-col gap-6">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <h2 className="text-xl font-bold text-gray-900 font-sans">판매 중인 상품</h2>
+    <div className="w-full max-w-[1200px] mx-auto px-4 md:px-6 flex flex-col gap-6">
+      <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-bold text-gray-900 font-sans">판매 중인 상품</h2>
+          <div className="md:hidden">
+            <ButtonXS state="default" text="상품 등록하기" />
+          </div>
+        </div>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex items-center gap-3">
           <Search value={keyword} onChange={handleKeywordChange} />
-          <ButtonXS state="default" text="상품 등록하기" />
+          <div className="hidden md:block">
+            <ButtonXS state="default" text="상품 등록하기" />
+          </div>
           <SortDropdown value={orderBy} onSelect={handleSortSelect} />
         </div>
       </div>
